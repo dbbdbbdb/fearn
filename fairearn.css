@@ -117,3 +117,57 @@ footer {
 footer:hover {
     background-color: #2c3e50;
 }
+/* Add a media query for screens with a maximum width of 768px (adjust as needed) */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1em; /* Adjust header padding for smaller screens */
+    }
+
+    nav {
+        padding: 0.5em; /* Adjust navigation padding for smaller screens */
+    }
+
+    nav li {
+        display: block; /* Change navigation items to block for better stacking */
+        margin: 10px 0; /* Add some spacing between navigation items */
+    }
+
+    main {
+        padding: 15px; /* Adjust main padding for smaller screens */
+    }
+
+    .earnings, .about, .services {
+        padding: 15px; /* Adjust card padding for smaller screens */
+    }
+
+    .btn {
+        display: block; /* Change button to block for better stacking */
+        margin: 10px 0; /* Add some spacing between buttons */
+    }
+}
+
+/* Keep the existing styles for larger screens */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* ... (all your existing styles) ... */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #2c3e50;
+}
